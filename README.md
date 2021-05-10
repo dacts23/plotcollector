@@ -18,7 +18,7 @@ import plotcollector as plc
 
 #this goes after all figures have been created
 #Note the rest of the script won't continue until the
-#mplviewer window is closed
+#plotcollector window is closed
 plc.view()
 ```
 ## Using the Spyder IDE
