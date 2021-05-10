@@ -1,9 +1,10 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.1.2' 
+VERSION = '0.1.3' 
 DESCRIPTION = 'Matplotlib figure viewer GUI'
-LONG_DESCRIPTION = 'Matplotlib figure viewer QT5 GUI, provides a single interactive window for all figures with file save capabilities.'
-URL = "https://github.com/dacts23/plotcollector/releases/download/plotcollector-0.1.2/plotcollector-0.1.2-py3-none-any.whl"
+with open('README.md') as f:
+    LONG_DESCRIPTION = f.read()
+URL = "https://github.com/dacts23/plotcollector/releases/download/plotcollector-0.1.3/plotcollector-0.1.3-py3-none-any.whl"
 REPO = "https://github.com/dacts23/plotcollector"
 setup(
         name="plotcollector", 
