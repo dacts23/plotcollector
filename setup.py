@@ -21,7 +21,7 @@ setup(
         install_requires=["PyQt5","matplotlib","python-pptx"],
         keywords=['python', 'plotcollector', "matplotlib", "GUI"],
         classifiers= [
-            "Development Status :: 2 - Beta",
+            "Development Status :: 4 - Beta",
             "Intended Audience :: Education",
             "License :: OSI Approved :: MIT License",
             "Programming Language :: Python :: 3"
