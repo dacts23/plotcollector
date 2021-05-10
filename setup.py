@@ -19,6 +19,7 @@ setup(
         download_url=URL,
         description=DESCRIPTION,
         long_description=LONG_DESCRIPTION,
+        long_description_content_type='text/markdown',
         packages=find_packages(),
         package_data = {"plotcollector": ["plotcollector/data/window.ui"]},
         include_package_data=True,
