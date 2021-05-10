@@ -1,8 +1,11 @@
 from setuptools import setup, find_packages
+from os import path
 
 VERSION = '0.1.3' 
 DESCRIPTION = 'Matplotlib figure viewer GUI'
-with open('README.md') as f:
+# read the contents of your README file
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
     LONG_DESCRIPTION = f.read()
 URL = "https://github.com/dacts23/plotcollector/releases/download/plotcollector-0.1.3/plotcollector-0.1.3-py3-none-any.whl"
 REPO = "https://github.com/dacts23/plotcollector"
