@@ -125,7 +125,7 @@ class Main(QMainWindow, Ui_MainWindow):
             with PdfPages(save_path) as pdf:
                 for fig_data in self.fig_dict.values():
                     fig, size, dpi = fig_data
-                    fig.figsize = size
+                    fig.set_size_inches(size)
                     pdf.savefig(fig, bbox_inches='tight',
                                 pad_inches=0.1,dpi=dpi)  # save pdf
             QtWidgets.QMessageBox.about(self, "Save File", "PDF file saved.")
@@ -139,7 +139,7 @@ class Main(QMainWindow, Ui_MainWindow):
 
             for fig_data in self.fig_dict.values():
                 fig, size, dpi = fig_data
-                fig.figsize = size
+                fig.set_size_inches(size)
                 # save figure to file like object
                 image_stream = io.BytesIO()
                 fig.savefig(image_stream, bbox_inches='tight', pad_inches=0.1,dpi=dpi)
